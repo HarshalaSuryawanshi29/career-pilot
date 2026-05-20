@@ -146,7 +146,6 @@ export const enhanceResume = async (resumeText, preferences, aiProvider) => {
     const result = await getModel().generateContent(prompt);
     const response = await result.response;
     const text = response.text();
-    const result = await provider.generateContent(prompt);
 
     return {
       success: true,
@@ -173,7 +172,6 @@ ${resumeText}`;
     const result = await getModel().generateContent(prompt);
     const response = await result.response;
     const text = response.text();
-    const result = await provider.generateContent(prompt);
 
     return {
       success: true,

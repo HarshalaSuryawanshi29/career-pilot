@@ -1,0 +1,13 @@
+{
+  "name": "github-profile",
+  "description": "A GitHub-style developer profile portfolio template (dark mode)",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "preview": "preview.png",
+  "tags": ["github","profile","portfolio","dark"],
+  "colors": {
+    "background": "#0D1117",
+    "card": "#161B22",
+    "accent": "#39d353"
+  }
+}

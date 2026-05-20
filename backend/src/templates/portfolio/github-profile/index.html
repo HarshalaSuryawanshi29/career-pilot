@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{PORTFOLIO_NAME}}</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="gp-wrapper">
+    <aside class="gp-sidebar" role="complementary">
+      <img class="gp-avatar" src="{{AVATAR}}" alt="{{NAME}} avatar">
+      <h1 class="gp-name">{{NAME}}</h1>
+      <p class="gp-bio">{{BIO}}</p>
+
+      <nav class="gp-social" aria-label="social links">
+        <a href="{{GITHUB}}" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="{{LINKEDIN}}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="{{TWITTER}}" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="{{WEBSITE}}" target="_blank" rel="noopener noreferrer">Website</a>
+      </nav>
+
+      <section class="gp-stats">
+        <div><strong>{{TOTAL_REPOS}}</strong><span>Repositories</span></div>
+        <div><strong>{{FOLLOWERS}}</strong><span>Followers</span></div>
+        <div><strong>{{CONTRIBUTIONS}}</strong><span>Contributions</span></div>
+      </section>
+    </aside>
+
+    <main class="gp-main">
+      <section id="about" class="gp-about">
+        <!-- about markdown will be rendered here -->
+      </section>
+
+      <section class="gp-pinned">
+        <h2>Pinned Projects</h2>
+        <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="gp-heatmap">
+        <h2>Contributions</h2>
+        <div id="contrib-legend" class="contrib-legend">
+          <span>Less</span>
+          <div class="legend-squares">
+            <span style="background:#e6f4ea"></span>
+            <span style="background:#9be9b3"></span>
+            <span style="background:#40c463"></span>
+            <span style="background:#30a14e"></span>
+            <span style="background:#216e39"></span>
+          </div>
+          <span>More</span>
+        </div>
+        <div id="contrib-grid" class="contrib-grid" aria-hidden="false"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
